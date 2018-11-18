@@ -1,0 +1,24 @@
+{
+  "name": "friend_finder",
+  "version": "1.0.0",
+  "description": "Dating app that takes results and gets the best match",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wizkym/friend_finder.git"
+  },
+  "author": "Kelvin K. Mundi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wizkym/friend_finder/issues"
+  },
+  "homepage": "https://github.com/Wizkym/friend_finder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
