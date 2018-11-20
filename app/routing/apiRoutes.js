@@ -21,7 +21,7 @@ module.exports = function(app){
                 diff += (Math.abs(friends[i].scores[x] - newUser.scores[x]));
             }
 
-            if (i = 0) {
+           /* if (i = 0) {
                 matchedName = friends[i].name;
                 matchedImg = friends[i].photo;
                 totalDiff = diff;
@@ -33,6 +33,16 @@ module.exports = function(app){
                 diff = 0;
             } else if ((i > 0) && (totalDiff < diff)) { //if the previous difference is lesser = keep it!
                 diff = 0;
+            }*/
+
+            if (diff < totalDiff) {
+                // console.log('Closest match found = ' + diff);
+                // console.log('Friend name = ' + friends[i].name);
+                // console.log('Friend image = ' + friends[i].photo);
+
+                totalDiff = diff;
+                matchedName = friends[i].name;
+                matchedImg = friends[i].photo;
             }
         }
         console.log(newUser + "POSTED");
