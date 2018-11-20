@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey Page</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {background-color: powderblue; margin-top: 30px}
+        h1   {color: green;}
+        a    {color: yellow; text-decoration: none}
+        a:hover {color: black;}
+        .center {text-align: center}
+        #submit {margin-top: 10px}
+        .mySurvey {border: 1px dashed black; padding: 10px}
+    </style>
+</head>
+
+<body>
+<div class="container center">
+    <div class="mySurvey">
+        <h2>Take the survey below to find a match</h2>
+        <hr>
+        <h3><strong>Personal Information</strong></h3>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+        <h4>Link to photo (Required)</h4>
+        <input type="text" id="photo" class="form-control" required>
+        <hr>
+        <h3>
+            <strong>Question 1</strong>
+        </h3>
+        <h4>You open up about issues you're going through.</h4>
+        <select class="form-control" id="q1">
+            <option></option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+        <h3>
+            <strong>Question 2</strong>
+        </h3>
+        <h4>A casual walk in the park is a great idea to pass time</h4>
+        <select class="form-control" id="q2">
+            <option></option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <hr>
+        <h3>
+            <strong>Question 3</strong>
+        </h3>
+        <h4>You compromise a lot to make others like you.</h4>
+        <select class="form-control" id="q3">
+            <option></option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <hr>
+        <h3>
+            <strong>Question 4</strong>
+        </h3>
+        <h4>You sleep with your eyes open.</h4>
+        <select class="form-control" id="q4">
+            <option></option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <hr>
+        <h3>
+            <strong>Question 5</strong>
+        </h3>
+        <h4>You like pets.</h4>
+        <select class="form-control" id="q5">
+            <option></option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <hr>
+        <h3>
+            <strong>Question 6</strong>
+        </h3>
+        <h4>The notebook was your favorite movie in 2004.</h4>
+        <select class="form-control" id="q6">
+            <option></option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <hr>
+        <h3>
+            <strong>Question 7</strong>
+        </h3>
+        <h4>Your desire for getaways and vacations is unending.</h4>
+        <select class="form-control" id="q7">
+            <option></option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <hr>
+        <h3>
+            <strong>Question 8</strong>
+        </h3>
+        <h4>You prefer staying indoors to going out on Friday nights.</h4>
+        <select class="form-control" id="q8">
+            <option></option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <hr>
+        <h3>
+            <strong>Question 9</strong>
+        </h3>
+        <h4>You're always the first to get it (trends).</h4>
+        <select class="form-control" id="q9">
+            <option></option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <hr>
+        <h3>
+            <strong>Question 10</strong>
+        </h3>
+        <h4>You believe that things happen for a reason (destiny).</h4>
+        <select class="form-control" id="q10">
+            <option></option>
+            <option value="1">1(Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <button type="button" id="submit" class="btn btn-primary">Submit</button>
+
+    </div>
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalCenterTitle">You've got a match!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="results">
+                    <h4>Closest Friend Match</h4>
+                    <div class="divider"></div>
+                    <h5 id="userMatch"></h5>
+                    <img id="userMatchImage" class="materialboxed" width="650" src="">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <a href="/api/friends">API friends list</a><br>
+        </div>
+    </footer>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $("#submit").on('click', function () {
+        event.preventDefault();
+        let results = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: [
+                $("#q1").val(),
+                $("#q2").val(),
+                $("#q3").val(),
+                $("#q4").val(),
+                $("#q5").val(),
+                $("#q6").val(),
+                $("#q7").val(),
+                $("#q8").val(),
+                $("#q9").val(),
+                $("#q10").val(),
+            ]
+        };
+        console.log(results);
+        $.post("/api/friends", results).done(function (data) {
+            console.log(data);
+            $("#userMatch").text(data.matchName);
+            $("#userMatchImage").attr("src", data.matchedPhoto);
+            $('#myModal').modal('toggle');
+        });
+    })
+</script>
+</body>
+</html>
