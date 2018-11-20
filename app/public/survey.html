@@ -189,10 +189,10 @@
                     </button>
                 </div>
                 <div class="modal-body" id="results">
-                    <h4>Closest Friend Match</h4>
-                    <div class="divider"></div>
-                    <h5 id="userMatch"></h5>
-                    <img id="userMatchImage" class="materialboxed" width="650" src="">
+                    <h4>Meet your new Friend:</h4>
+                    <hr>
+                    <img id="newImage" width="350" height="350" src="">
+                    <h5 id="newName"></h5>
 
                 </div>
                 <div class="modal-footer">
@@ -238,8 +238,8 @@
         console.log(results);
         $.post("/api/friends", results).done(function (data) {
             console.log(data);
-            $("#userMatch").text(data.matchName);
-            $("#userMatchImage").attr("src", data.matchedPhoto);
+            $("#newName").text(data.matchName);
+            $("#newImage").attr("src", data.matchedPhoto);
             $('#myModal').modal('toggle');
         });
     })

@@ -11,35 +11,18 @@ module.exports = function(app){
     app.post("/api/friends", function(req, res){
         let newUser = (req.body);
         let totalDiff = 0;
-        let diff = 0;
+        let diff;
         let matchedName = '';      // will store the best matched friend name
         let matchedImg;
 
         //compare scores by checking for the highest difference of the scores
         for(let i = 0; i < friends.length; i++){
+            diff = 0;
             for(let x = 0; x < newUser.scores.length; x++){
                 diff += (Math.abs(friends[i].scores[x] - newUser.scores[x]));
             }
 
-           /* if (i = 0) {
-                matchedName = friends[i].name;
-                matchedImg = friends[i].photo;
-                totalDiff = diff;
-                diff = 0;
-            } else if ((i > 0) && (diff < totalDiff)){ //if the previous difference is greater = update
-                matchedName = friends[i].name;
-                matchedImg = friends[i].photo;
-                totalDiff = diff;
-                diff = 0;
-            } else if ((i > 0) && (totalDiff < diff)) { //if the previous difference is lesser = keep it!
-                diff = 0;
-            }*/
-
             if (diff < totalDiff) {
-                // console.log('Closest match found = ' + diff);
-                // console.log('Friend name = ' + friends[i].name);
-                // console.log('Friend image = ' + friends[i].photo);
-
                 totalDiff = diff;
                 matchedName = friends[i].name;
                 matchedImg = friends[i].photo;
