@@ -28,7 +28,6 @@ module.exports = function(app){
                 matchedImg = friends[i].photo;
             }
         }
-        console.log(newUser + "POSTED");
         friends.push(newUser);
         res.json({status:"OK", matchName: matchedName, matchedPhoto: matchedImg});
 
